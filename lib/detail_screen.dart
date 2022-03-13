@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_layout/model/tourism_place.dart';
 
 //
 class DetailScreen extends StatelessWidget {
-  const DetailScreen({Key? key}) : super(key: key);
+  const DetailScreen({Key? key, required this.place}) : super(key: key);
+
+  final TourismPlace place;
 
   @override
   Widget build(BuildContext context) {
