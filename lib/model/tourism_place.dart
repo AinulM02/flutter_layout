@@ -19,24 +19,24 @@ var tourismPlaceList = [
     location: 'Jl Pemuda',
     imageAsset: 'assets/images/kota1.jpg'
   ),
-  //   TourismPlace(
-  //   name: 'Surabaya Submarine Monument',
-  //   location: 'Jl Pemuda',
-  //   imageAsset: 'assets/images/kota1.jpg'
-  // ),
-  //   TourismPlace(
-  //   name: 'Surabaya Submarine Monument',
-  //   location: 'Jl Pemuda',
-  //   imageAsset: 'assets/images/kota1.jpg'
-  // ),
-  //   TourismPlace(
-  //   name: 'Surabaya Submarine Monument',
-  //   location: 'Jl Pemuda',
-  //   imageAsset: 'assets/images/kota1.jpg'
-  // ),
-  //   TourismPlace(
-  //   name: 'Surabaya Submarine Monument',
-  //   location: 'Jl Pemuda',
-  //   imageAsset: 'assets/images/kota1.jpg'
-  // ),
+    TourismPlace(
+    name: 'Surabaya Submarine Monument',
+    location: 'Jl Pemuda',
+    imageAsset: 'assets/images/kota1.jpg'
+  ),
+    TourismPlace(
+    name: 'Surabaya Submarine Monument',
+    location: 'Jl Pemuda',
+    imageAsset: 'assets/images/kota1.jpg'
+  ),
+    TourismPlace(
+    name: 'Surabaya Submarine Monument',
+    location: 'Jl Pemuda',
+    imageAsset: 'assets/images/kota1.jpg'
+  ),
+    TourismPlace(
+    name: 'Surabaya Submarine Monument',
+    location: 'Jl Pemuda',
+    imageAsset: 'assets/images/kota1.jpg'
+  ),
 ];
