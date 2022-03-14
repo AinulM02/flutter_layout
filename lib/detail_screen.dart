@@ -14,13 +14,13 @@ class DetailScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Image.asset('assets/images/contoh.jpg'),
+            Image.asset(place.imageAsset),
             Container(
               margin: const EdgeInsets.only(top: 16.0),
-              child: const Text(
-                "Surabaya Submarine Monument",
+              child: Text(
+                place.name,
                 textAlign: TextAlign.center,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 30.0,
                   fontWeight: FontWeight.bold,
                 ),
@@ -32,21 +32,21 @@ class DetailScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   Column(
-                    children: const <Widget>[
-                      Icon(Icons.calendar_today),
-                      Text('Open Everday'),
+                    children: <Widget>[
+                      const Icon(Icons.calendar_today),
+                      Text(place.hari),
                     ],
                   ),
                   Column(
-                    children: const <Widget>[
-                      Icon(Icons.access_time),
-                      Text('08:00 - 16:00'),
+                    children: <Widget>[
+                      const Icon(Icons.access_time),
+                      Text(place.waktu),
                     ],
                   ),
                   Column(
-                    children: const <Widget>[
-                      Icon(Icons.attach_money),
-                      Text('Rp 10.000,-'),
+                    children: <Widget>[
+                      const Icon(Icons.attach_money),
+                      Text(place.tiket),
                     ],
                   ),
                 ],
@@ -54,34 +54,29 @@ class DetailScreen extends StatelessWidget {
             ),
             Container(
               padding: const EdgeInsets.all(16.0),
-              child: const Text(
-                "Deskripsi.....................",
+              child: Text(
+                place.deskrisi,
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 16.0),
+                style: const TextStyle(fontSize: 16.0),
               ),
             ),
-            Container(
+            SizedBox(
               height: 150,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: <Widget>[
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Image.network(
-                        'https://media-cdn.tripadvisor.com/media/photo-m/1280/16/a9/33/43/liburan-di-farmhouse.jpg'),
+                    padding: const EdgeInsets.all(4.0),
+                    child: Image.asset(place.galeri[0]),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Image.asset('assets/images/kota1.jpg'),
+                    padding: const EdgeInsets.all(4.0),
+                    child: Image.asset(place.galeri[1]),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Image.asset('assets/images/kota2.jpg'),
+                    padding: const EdgeInsets.all(4.0),
+                    child: Image.asset(place.galeri[2]),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Image.asset('assets/images/kota3.jpg'),
-                  )
                 ],
               ),
             ),

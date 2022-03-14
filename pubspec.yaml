@@ -69,13 +69,20 @@ flutter:
     - assets/images/boro_4.jpg
     - assets/images/mali_1.jpg
     - assets/images/mali_2.jpg
+    - assets/images/mali_3.jpg
+    - assets/images/mali_4.jpg
     - assets/images/monas_1.jpg
     - assets/images/monas_2.jpg
     - assets/images/monas_3.jpg
+    - assets/images/monas_4.jpg
     - assets/images/pagoda_1.jpg
     - assets/images/pagoda_2.jpg
+    - assets/images/pagoda_3.jpg
+    - assets/images/pagoda_4.jpg
     - assets/images/tugu_1.jpg
     - assets/images/tugu_2.jpg
+    - assets/images/tugu_3.jpg
+    - assets/images/tugu_4.jpg
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
