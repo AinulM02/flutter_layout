@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_layout/provider/done_tourism_provider.dart';
 import 'main_screen.dart';
+
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,9 +14,11 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Contacts',
-      theme: ThemeData(
+    return ChangeNotifierProvider(
+      create:(context) => DoneTourismProvider(),
+      child: MaterialApp(
+        title: 'Contacts',
+        theme: ThemeData(),
         // This is the theme of your application.
         //
         // Try running your application with "flutter run". You'll see the
@@ -24,9 +28,9 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
-      ),
+      
       home: MainScreen(),
+      ),
     );
   }
 }
